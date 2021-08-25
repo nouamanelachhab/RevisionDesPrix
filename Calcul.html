@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+
+
+
+
+   
+<section id="page-title-section" class="d-flex align-items-center">
+<style>
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem
+}
+
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1511883040705-6011fad9edfc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80');
+    
+}
+
+.card-signin {
+    border: 0;
+    border-radius: 0rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1)
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem
+}
+
+.card-signin .card-body {
+    padding: 2rem
+}
+
+.form-signin {
+    width: 100%
+}
+
+.form-signin .btn {
+    font-size: 80%;
+    border-radius: 0rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem
+}
+
+.form-label-group input {
+    height: auto
+}
+
+.form-label-group>input,
+.form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x)
+}
+
+.form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out
+}
+
+.form-control:focus {
+    box-shadow: 10px 0px 0px 0px #ffffff !important
+}
+
+.btn-google {
+    color: white;
+    background-color: #ea4335
+}
+
+.btn-facebook {
+    color: white;
+    background-color: #3b5998
+}
+.container {
+    
+    background-color: transparent;
+}
+
+.remember {
+    float: left;
+    clear: none; 
+}
+</style>
+
+<script>
+    var x =0;
+    function showfrag(){
+    console.log(x);
+   
+    document.getElementById(x).hidden = false;
+    x+=1;
+    
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                    <div class="signin" id="signin">
+                        <h5 class="card-title text-center">Opération</h5>
+                        <form class="form-signin">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm">
+                                   Date:
+                                  </div>
+                                  <div class="col-sm">
+                                    <div class="form-label-group"> <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus>  </div>
+                                  </div>
+                            
+                                </div>
+                              </div>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-sm">
+                                   Symbole:
+                                  </div>
+                                  <div class="col-sm">
+                                    <div class="form-label-group">
+                                        <select class="form-select" aria-label=".form-select-sm example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select> </div>
+                                  </div>
+                            
+                                </div>
+                              </div>
+                     
+                            
+                        
+                        </form>
+                        </div>
+    
+                    
+                    </div>
+                    <br>
+                    <button class="btn btn-block btn-warning " type="button"  >Calculer</button>
+        
+                </div>
+          
+                
+            </div>
+
+           
+                    
+                    </div>
+
+                    <div class="col-sm">
+
+                        <div class="">
+                            <div class="card card-signin my-5">
+                                <div class="card-body">
+                                <div class="signin" id="signin">
+                                    <h5 class="card-title text-center">Périodes</h5>
+                                    <form class="form-signin">
+                                        <div class="container" id="4">
+                                            
+                                            <h6>P1</h6>
+                                            <div class="row">
+                                              <div class="col-sm">
+                                               Date Debut : <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus> 
+                                              </div>
+                                              <div class="col-sm">
+                                                Date Fin : <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus> 
+                                         
+                                              </div>
+                                        
+                                            </div>
+                                          </div>
+                                          <div class="container" id="0" hidden>
+                                            
+                                            <h6>P2</h6>
+                                            <div class="row">
+                                              <div class="col-sm">
+                                               Date Debut : <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus> 
+                                              </div>
+                                              <div class="col-sm">
+                                                Date Fin : <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus> 
+                                         
+                                              </div>
+                                        
+                                            </div>
+                                          </div>
+                                        
+                                          <div class="container" id="1" hidden>
+                                            
+                                            <h6>P3</h6>
+                                            <div class="row">
+                                              <div class="col-sm">
+                                               Date Debut : <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus> 
+                                              </div>
+                                              <div class="col-sm">
+                                                Date Fin : <input type="date" id="inputEmail" class="form-control" placeholder=" address" required autofocus> 
+                                         
+                                              </div>
+                                        
+                                            </div>
+                                          </div>
+                                        
+                                    
+                                    </form>
+                                  
+                                    </div>
+                
+
+                    </div>
+                    
+            <button class="btn btn-block btn-primary " type="button" onclick="showfrag()">+ Ajouter une Date</button>
+                </div>
+                
+            </div>
+        
+        </div>
+       
+    </div>
+
+
+</div>
+
+
+</section>
+
+
+    
+</body>
+</html>
